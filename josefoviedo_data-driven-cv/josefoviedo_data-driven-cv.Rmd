@@ -1,0 +1,71 @@
+---
+name: Jose F
+surname: Oviedo
+position: "Technical Data Business Professional"
+phone: +1 520 248 7520
+profilepic: josefoviedo.jpg
+www: josefoviedo.blogspot.com/
+email: "jfo@email.arizona.edu"
+twitter: josefoviedo_
+github: josefoviedo
+linkedin: jose-oviedo-461278192/
+aboutme: "Business-minded but with capable technical ability to execute data-centric tasks that provide relative business insights for decision-makers. I have loved computers since I was young, playing Warcraft and DOTA any chance I had, but in high school I filled my spare time with sports and other things so my computer days were left behind. Years later I found myself interested in computers again but this time it wasn’t video games it was crypto-currency and crypto-mining. During the covid-19 pandemic lockdowns I read about cryptography and found myself getting excited about data, which is at the heart of cryptography. Following the pandemic, I pursued my dream of becoming a crypto-lawyer, who in my mind was someone that would pioneer the regulation and legislation of data that was being rapidly crypto-innovated. I had big plans and for over a year I studied for the LSAT but after taking it multiple times I could not beat my score of 150 which meant I wouldn't be accepted to my dream school. Rather than continuing to brute force my way in I sought other ways to fulfil myself and my hunger for interacting with data. I found other aspects of data systems interesting, more than just encryption this time. After all, there wouldn’t be anything to encrypt if there was no data."
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+
+```
+
+# Skills and Abilities
+
+### Technical Application of Data Management, ETL, EDA, and Reporting:
+
+* Experience in Version Control Management Systems (GitHub, Google Cloud Source Repositories).
+
+* Proficient with Sheets/Connected-Sheets/Excel, Slides/PowerPoint, Docs/Word, OneNote.
+
+* Call Spreadsheet Functions (Import<function>, XLookup, Filter, Sort, <function>IF, Pivot table).
+
+* Writing Query Statements for Data Warehouses/RDBMSs to Extract, Filter, Join, and Redistribute Datasets or Temporary Tables for ad-hoc Analyses (Google BigQuery, Google Cloud SQL, MySQL).
+
+* Capable Statistical/Analytical Programming and Library/Package Management (R, Python).
+
+* Build Data Visualizations to tell a Data-Driven Story (ggplot2, Tableau, Looker Studio).
+
+* Author R Markdowns/R Notebooks/JupyterLab Notebooks for Code Reproducibility and Reporting.
+
+* Use Open-Source Repositories/Data Community to Up-Skill/Troubleshoot (Kaggle, stackoverflow).
+
+# Education and Certificates
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ City,
+  "BS Business Administration", "2012-2016", "University of Arizona", "Eller College of Management", "Tucson, Arizona, USA",
+  "Certificate of Finance", "2015-2016", "University of Arizona", "Eller College of Management", "Tucson, Arizona, USA",
+  "Google Data Analytics", "2021-2022", "Coursera", "Grow with Google Professional Certificates", "Tucson, Arizona, USA",
+  "Google IT Automation with Python", "2022-2023", "Coursera", "Grow with Google Professional Certificates", "Tucson, Arizona, USA"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, City)
+```
+
+# Recent Work Experience
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  2017, "Intuit TurboTax", "Securtity and Support Specialist",
+  2018, "Wells Fargo", "Home Mortgage Consultant",
+  2022, "Oviedo Advisors", "Insurance Agency Owner"
+) |>
+  detailed_entries(Type, Year, Desc)
+```
+
+# Interests and Hobbies
+
+* World affairs and finance, emerging technologies, boxing, snowboarding, hiking, traveling with family and friends, and training our golden doodle with my daughter using online videos.
